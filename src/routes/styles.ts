@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
   },
   drawerItemLabel: {
     fontFamily: 'Avenir-Roman',
-    fontSize: 22,
+    fontSize: 20,
   },
   stack: {
     flex: 1,

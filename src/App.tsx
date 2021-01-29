@@ -3,7 +3,7 @@ import React from 'react';
 import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import Drawer from './routes/drawer';
-import { LogBox } from 'react-native';
+import { LogBox, StatusBar } from 'react-native';
 
 LogBox.ignoreAllLogs();
 
@@ -18,6 +18,7 @@ const NavTheme = {
 const App: React.FC = () => {
   return (
     <SafeAreaProvider>
+      <StatusBar barStyle="dark-content" />
       <NavigationContainer theme={NavTheme}>
         <Drawer />
       </NavigationContainer>
