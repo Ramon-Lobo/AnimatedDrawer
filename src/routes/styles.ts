@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import styled from 'styled-components/native';
 
 const styles = StyleSheet.create({
   container: {
@@ -12,15 +13,16 @@ const styles = StyleSheet.create({
   },
   drawerItem: {
     width: '50%',
-    height: 51,
+    height: 55,
     borderRadius: 15,
     justifyContent: 'center',
     paddingLeft: 30,
     marginLeft: 20,
+    marginVertical: 15,
   },
   drawerItemLabel: {
     fontFamily: 'Avenir-Roman',
-    fontSize: 20,
+    fontSize: 22,
   },
   stack: {
     flex: 1,
@@ -48,4 +50,36 @@ const DrawerItemListProps = {
   itemStyle: styles.drawerItem,
 };
 
-export { styles, DrawerItemProps, DrawerItemListProps };
+const DrawerTitleContainer = styled.View`
+  width: 50%;
+  align-items: center;
+
+  margin-top: 30px;
+  margin-bottom: 50px;
+`;
+
+const DrawerTitle = styled.Text`
+  color: #ffffff;
+  font-family: Avenir-Black;
+  font-size: 28px;
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 38px;
+`;
+
+const DrawerSpacing = styled.View`
+  height: 1px;
+  width: 175.5px;
+  border: 1px solid #84818e;
+
+  margin: 20px 30px;
+`;
+
+export {
+  styles,
+  DrawerItemProps,
+  DrawerItemListProps,
+  DrawerTitle,
+  DrawerTitleContainer,
+  DrawerSpacing,
+};

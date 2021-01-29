@@ -10,14 +10,14 @@ export const Header = styled.View`
   top: 0;
 
   flex-direction: row;
-  align-items: center;
+  align-items: flex-end;
 
   height: 100px;
   padding: 20px;
 `;
 
 export const IconButton = styled.TouchableOpacity`
-  margin: 0px 15px;
+  margin: 0px 15px 5px 15px;
 `;
 
 export const HeaderTitle = styled.Text`
